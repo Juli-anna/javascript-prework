@@ -47,6 +47,32 @@ if(playerInput == '1'){
 
 printMessage('Twój ruch to: ' + playerMove)
 
+if( computerMove == 'kamień' && playerMove == 'papier'){
+    printMessage('Ty wygrywasz!');
+}else if( computerMove == 'papier' && playerMove == 'kamień'){
+    printMessage('Ja wygrywam!');
+}else if( computerMove == 'kamień' && playerMove == 'nożyce'){
+    printMessage('Ja wygrywam!');
+}else if( computerMove == 'nożyce' && playerMove == 'kamień'){
+    printMessage('Ty wygrywasz!');
+}else if( computerMove == 'nożyce' && playerMove == 'papier'){
+    printMessage('Ja wygrywam!');
+}else if( computerMove == 'papier' && playerMove == 'nożyce'){
+    printMessage('Ty wygrywasz!');   
+}else if( computerMove == 'kamień' && playerMove == 'kamień'){
+    printMessage('Jest remis!');
+}else if( computerMove == 'papier' && playerMove == 'papier'){
+    printMessage('Jest remis!');
+}else if( computerMove == 'nożyce' && playerMove == 'nożyce'){
+    printMessage('Jest remis!');
+}else if(computerMove == 'kamień' && playerMove == 'nieznany ruch'){
+    printMessage('Nieznany ruch gracza!');
+}else if(computerMove == 'papier' && playerMove == 'nieznany ruch'){
+    printMessage('Nieznany ruch gracza!');
+}else if(computerMove == 'nożyce' && playerMove == 'nieznany ruch'){
+    printMessage('Nieznany ruch gracza!');
+}
+
 //printMessage('Liczba po zaokrągleniu w dół to: ' + randomNumber);
 
 //if(1 > 2){
